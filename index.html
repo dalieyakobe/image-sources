@@ -7,12 +7,11 @@
 
 <style>
 
-<style>
-
-body{
+ body{
     margin:0;
     font-family: Arial, sans-serif;
 
+    /* background image stays */
     background-image:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url("first.jpg");
@@ -33,7 +32,7 @@ body{
 img{
     width:85%;
     max-width:700px;
-    margin:40px;
+    margin:40px auto;
     border-radius:16px;
     border:4px solid white;
 
@@ -52,20 +51,20 @@ p{
 }
 
 
-/* MOBILE FIX */
+/* MOBILE ADJUSTMENTS */
 @media (max-width:600px){
 
 body{
     padding:15px;
 
-    /* better background behaviour on phones */
-    background-attachment:scroll;
+    /* background still visible but scaled better */
     background-size:cover;
+    background-position:center;
 }
 
 img{
-    width:92%;
-    max-width:100%;
+    width:95%;
+    max-width:95%;
     margin:20px auto;
 }
 
@@ -74,8 +73,7 @@ p{
 }
 
 }
-
-</style></style>
+</style>
 
 </head>
 
@@ -90,4 +88,5 @@ p{
 </body>
 
 </html>
+
 
