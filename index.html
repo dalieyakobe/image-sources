@@ -8,61 +8,54 @@
 <style>
 
 body{
-    text-align: center;
+    margin:0;
     font-family: Arial, sans-serif;
-    background-color: #3d3c3c;
+
+    /* background image with dark overlay */
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("first.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
 }
 
-h2{
- color: white;
- font-size: 2rem;
-
-}
-.image-box{
-    margin: 40px auto;
-}
-
+/* images */
 img{
-    border-radius: 15px;
-    width:800px;
-    border-radius:10px;
+    width:700px;
+    margin:40px;
+    border-radius:16px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 img:hover{
-    transform: scale(1.05);
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transform:scale(1.05);
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
 }
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform: translateY(20px);
-    }
-    to{
-        opacity:1;
-        transform: translateY(0);
-    }
+p{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
 }
 
-.image-box{
-    animation: fadeIn 1.5s ease;
-}
 </style>
 
 </head>
 
 <body>
 
-<div class="image-box">
-<h2>Nurture Path Foods</h2>
+<p>Nurture Path Foods</p>
 <img src="first.jpg">
-</div>
 
-<div class="image-box">
-<h2></h2>
+<p>Second Image</p>
 <img src="second.jpeg">
-</div>
 
 </body>
 </html>
